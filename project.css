@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+.menu-logo {
+  height: 3rem;
+  mix-blend-mode: lighten;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+   max-width: 100% ;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  color: #a347ff;
+}
+.projects-container {
+  margin: 2.4rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: 1fr 1fr;  */
+  gap: 3rem;
+  max-width: 60%;
+  height: auto;
+  /* margin: auto; */
+  /* border: 1px solid red; */
+  padding: 1.5rem;
+}
+h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+.project-card-1 {
+  height: 240px;
+  /* background-color: transparent; */
+}
+.project-card-2 {
+  /* grid-row-start: 2;
+  grid-row-end: 4; */
+  grid-row: span 2;
+  height: 420px;
+  border: 1px solid rgb(84, 84, 190);
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.project-card-3 {
+  grid-row: span 2;
+  height: 420px;
+  border: 1px solid rgb(176, 59, 176);
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.project-card-4 {
+  grid-row: span 2;
+  height: 420px;
+  border: 1px solid rgb(51, 183, 104);
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.project-card-5 {
+  /* grid-row-start: 3;
+  grid-row-end: 5; */
+  grid-row: span 2;
+  height: 420px;
+  border: 1px solid rgb(181, 25, 126);
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.project-card {
+  /* background-color: #1f1f1f; */
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.project-card img {
+  width: 100%;
+  /* padding-left: 0.5rem; */
+  border-radius: 8px;
+}
+.project-info {
+  margin-top: 10px;
+}
+.project-info h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.project-info p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+.project-buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+.project-buttons a {
+  background-color: #4a8fef;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr; /* Stack items in a single column for smaller screens */
+    max-width: 100%;
+  }
+}

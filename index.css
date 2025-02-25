@@ -1,0 +1,149 @@
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  height: auto;
+  overflow-y: scroll;
+  /* overflow: hidden; */
+}
+
+/* home page  */
+.menu-logo {
+  height: 3rem;
+  mix-blend-mode: lighten;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+   max-width: 100% ;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  color: #a347ff;
+}
+.mobile-navbar-icon {
+  width: 4rem;
+  height: 4rem;
+}
+.mobile-navbar-btn {
+  display: none;
+  cursor: pointer;
+  background: transparent;
+}
+.hero {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  width: 85%;
+  margin-top: 2rem;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text .intro {
+  /* color: #a347ff; */
+  font-weight: 400;
+  margin-left: 8rem;
+}
+
+.hero-text h1 {
+  /* font-size: 48px; */
+  font-weight: 700;
+  font-size: 7rem;
+}
+
+.hero-text h1 span {
+  color: #a347ff;
+}
+
+.hero-text .description {
+  margin-top: 10px;
+  color: #ccc;
+}
+
+.hero-image img {
+  width: 100%;
+  mix-blend-mode: lighten;
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero-text h1 {
+    font-size: 5rem;
+  }
+  .hero-image img {
+    width: 100%;
+    /* margin: 1.3rem; */
+    margin-left: 4.5rem;
+  }
+.navbar{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+  ul li {
+    display: none;
+  }
+  .menu-logo {
+    height: 3rem;
+  }
+  nav ul{
+    position: absolute;
+    top: 50px;
+    left:0;
+    right:0;
+    flex-direction: column;
+    text-align: center;
+    background: #a347ff;
+    gap: 0;
+    overflow: hidden;
+  }
+  nav ul li{
+    padding: 20px;
+  }
+  .mobile-navbar-btn{
+    display: block;
+  }
+}
+
+

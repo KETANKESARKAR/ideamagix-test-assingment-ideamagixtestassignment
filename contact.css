@@ -1,0 +1,196 @@
+/* General Styles */
+body {
+  background-color: #0c0c0c;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.menu-logo {
+  height: 3rem;
+  mix-blend-mode: lighten;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  color: #a347ff;
+}
+.contact {
+  width: 85%;
+  margin: 2.3rem auto;
+  padding: 0 0;
+  text-align: start;
+}
+
+.contact-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 46px;
+  font-weight: bold;
+  text-align: start;
+}
+
+.arrow {
+  color: #3498db;
+}
+
+/* Contact Form Styles */
+.contact-container {
+  width: auto;
+  margin: auto;
+  padding: 20px;
+  background-color: #0c0c0c;
+}
+
+/* Input Fields */
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Two columns on desktop */
+.input-field {
+  width: 48%;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.input-field label {
+  display: block;
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 5px;
+}
+
+/* Flat Input Fields */
+.input-field input,
+.input-field textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #555;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  padding: 8px 0;
+  transition: border-color 0.3s;
+}
+
+/* Input Focus Effect */
+.input-field input:focus,
+.input-field textarea:focus {
+  outline: none;
+  border-bottom: 1px solid #3498db;
+}
+
+/* Full Width for Textarea */
+.full-width {
+  width: 100%;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Social Media Icons */
+.social-icons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #3498db;
+}
+
+/* Footer */
+footer {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ccc;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .input-group {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .input-field {
+    width: 100%;
+  }
+
+  .submit-btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

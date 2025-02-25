@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="project.css" />
+    <link rel="stylesheet" href="contact.css" />
+
+    <!-- FOR CUSTOME FONT  -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- HEADER SECTION START -->
+    <header style="width: 88%;">
+      <nav class="navbar">
+        <div class="logo">
+          <img class="menu-logo" src="images/menu.jpeg"  alt="menu-bar" width="" />
+        </div>
+
+        <ul id="menuList">
+          <li><a href="#" class="active navbar-link">Home</a></li>
+          <li><a href="#" class="navbar-link">About</a></li>
+          <li><a href="#" class="navbar-link">Projects</a></li>
+          <li><a href="#" class="navbar-link">Contacts</a></li>
+        </ul>
+
+        <div class="mobile-navbar-btn">
+          <ion-icon name="menu-outline" class="mobile-navbar-icon" onclick="toggleMenu()"></ion-icon>
+          <!-- <ion-icon name="close-outline"></ion-icon> -->
+        </div>
+      </nav>
+
+    </header>
+    <!-- HEADER SECTION END -->
+
+    <!-- HOME PAGE START -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="intro">I am</p>
+        <h1 class="hero-heading">
+          Daisy <span> <br />Murillo</span>→
+        </h1>
+        <p class="description">
+          I am a computer science student and I work as an Infrastructure
+          engineer. I’m passionate about technology especially about the
+          software industry.
+        </p>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero-image.jpeg" alt="Profile Image" />
+      </div>
+    </section>
+    <!-- HOME PAGE END -->
+
+    <!-- ABOUT PAGE START  -->
+    <section class="about" >
+      <div class="flex">
+        <div class="about-text">
+          <p class="small-text">Something</p>
+          <h1>
+            About <span><br />Me →</span>
+          </h1>
+          <p class="description">
+            I am a computer science student and I work as an Infrastructure
+            engineer. I’m passionate about technology especially about the
+            software industry.
+          </p>
+        </div>
+        <div class="stats">
+          <div class="stat-box box-1">
+            <span class="highlight">3+</span> <br />
+            Years of Experience
+          </div>
+          <div class="stat-box box-2">
+            <span class="highlight" style="color: #7893ed">230+</span>
+            <br />Projects Completed
+          </div>
+          <div class="stat-box box-3">
+            <span class="highlight">7</span> <br />
+            Particular Skills
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="skills">
+        <div class="skill">
+          <img
+            class="skills-img"
+            src="images/coding-enthusiast.jpeg"
+            alt="Coding Enthusiast"
+          />
+          <h3>Coding Enthusiast</h3>
+          <p class="description">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form.
+          </p>
+        </div>
+
+        <div class="skill">
+          <img
+            class="skills-img"
+            src="images/infrastructure-expert.jpeg"
+            alt="Infrastructure Expert"
+          />
+          <h3>Infrastructure Expert</h3>
+          <p class="description">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form.
+          </p>
+        </div>
+
+        <div class="skill">
+          <img
+            class="skills-img"
+            src="images/web-master.jpeg"
+            alt="Web Master"
+          />
+          <h3>Web Master</h3>
+          <p class="description">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form.
+          </p>
+        </div>
+      </div>
+    </section>
+<!-- ABOUT PAGE END  -->
+
+<!-- PROJECT PAGE START  -->
+<div class="projects-container">
+  <div class="project-card project-card-1">
+    <p class="small-text">My completed</p>
+    <h1>Projects<span> →</span></h1>
+    <p class="description">
+      I am a computer science student and I work as an Infrastructure
+      engineer. I’m passionate about technology especially about software
+      industry.
+    </p>
+  </div>
+
+  <div class="project-card-2 project-card">
+    <img src="images/slack-project.jpeg" alt="Project01 Image" />
+    <div class="project-info">
+      <h3 style="margin: 1rem 0">Slack</h3>
+      <p style="margin: 1rem 0">
+        Something about the project should be written here in the contrary.
+      </p>
+    </div>
+    <div class="project-buttons">
+      <a href="#">iOS App</a>
+      <a href="#">Android</a>
+    </div>
+  </div>
+
+  <div class="project-card-3 project-card">
+    <img src="images/twitter-project.jpeg" alt="Project Image" />
+    <div class="project-info">
+      <h3 style="margin: 1rem 0">Tesla</h3>
+      <p style="margin: 1rem 0">
+        Something about the project should be written here in the contrary.
+      </p>
+    </div>
+    <div class="project-buttons">
+      <a href="#">iOS App</a>
+      <a href="#">Android</a>
+    </div>
+  </div>
+
+  <div class="project-card-4 project-card">
+    <img src="images/grab-project.jpeg" alt="Project Image" />
+    <div class="project-info">
+      <h3 style="margin: 1rem 0">Grab</h3>
+      <p style="margin: 1rem 0">
+        Something about the project should be written here in the contrary.
+      </p>
+    </div>
+    <div class="project-buttons">
+      <a href="#">iOS App</a>
+      <a href="#">Android</a>
+    </div>
+  </div>
+
+  <div class="project-card-5 project-card">
+    <img src="images/twitter-project.jpeg" alt="Project Image" />
+    <div class="project-info">
+      <h3 style="margin: 1rem 0">Twitter</h3>
+      <p style="margin: 1rem 0">
+        Something about the project should be written here in the contrary.
+      </p>
+    </div>
+    <div class="project-buttons">
+      <a href="#">iOS App</a>
+      <a href="#">Infrastructure</a>
+    </div>
+  </div>
+</div>
+<!-- PROJECT PAGE END -->
+
+<!-- CONTACT SECTION START  -->
+<section class="contact">
+  <div class="contact-heading">
+      <div class="heading">
+      <h1>Contacts<span class="arrow">&rarr;</span></h1>
+  </div>
+      <div class="social-icons">
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+      </div>
+
+</div>
+  </div>
+  <div class="contact-container">
+      <form>
+          <div class="input-group">
+              <div class="input-field">
+                  <label>First Name</label>
+                  <input type="text" placeholder="Enter your first name">
+              </div>
+              <div class="input-field">
+                  <label>Last Name</label>
+                  <input type="text" placeholder="Enter your last name">
+              </div>
+          </div>
+          <div class="input-group">
+              <div class="input-field">
+                  <label>Email</label>
+                  <input type="email" placeholder="Enter your email">
+              </div>
+              <div class="input-field">
+                  <label>Phone</label>
+                  <input type="tel" placeholder="Enter your phone number">
+              </div>
+          </div>
+          <div class="input-field full-width">
+              <label>Message</label>
+              <textarea placeholder="Write your message"></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Submit</button>
+      </form>
+  </div>
+
+  <footer>
+      <p>&copy; Copyright 2025 Ketan Kesarkar. All rights reserved.</p>
+  </footer>
+</section>
+<!-- CONTACT SECTION END  -->
+ 
+    <!-- FOR MENU ICON  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 50px 10%; */
+}
+
+.about {
+  /* background-color: #1a1a1a; */
+  width: 85%;
+  /* height: 100vh; */
+  margin: 2.4rem auto;
+}
+.about-text {
+  max-width: 500px;
+  text-align: start;
+}
+
+.small-text {
+  color: #a347ff;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+h1 span {
+  color: #a347ff;
+}
+
+.description {
+  margin-top: 10px;
+  color: #ccc;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.stat-box {
+  background: #2b2525;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 220px;
+  height: 170px;
+}
+
+.highlight {
+  font-size: 24px;
+  font-weight: bold;
+  color: #a347ff;
+}
+
+hr {
+  width: 100%;
+  margin: 30px 0;
+  border: 1px solid #a347ff;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.flex {
+  display: flex;
+  gap: 2.3rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.skill {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 200px;
+}
+.skills-img {
+  mix-blend-mode: lighten;
+  margin: 0.8rem 0;
+}
+.icon {
+  font-size: 24px;
+  color: #a347ff;
+}
+
+/* @media (max-width: 768px) {
+    .stats, .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+    .stat-box, .skill {
+        width: 100%;
+        max-width: 300px;
+    }
+}  */
+
+@media (max-width: 768px) {
+  .stats {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .flex {
+    flex-direction: column;
+    max-width: 500px;
+  }
+  .skills {
+    flex-direction: column;
+    align-items: center;
+  }
+  .stat-box,
+  .skill {
+    width: 100%;
+    max-width: 500px;
+  }
+}
